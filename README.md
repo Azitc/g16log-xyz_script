@@ -12,6 +12,6 @@ If you want to change how the thing comes out just modify the last > ${logname}.
 If you need just the pure xyz coordinates the last 2 sed can be removed but this will no longer be molden format (useful when piping to .com or .inp files)
 
 If the tab spaces are unsightly change it to space (The file is still completely usable just ugly) <br />
-In vim :`:%s/\s\+$` <br />
+In vim :`:%s/\s\+/ /g` <br />
 using sed: `sed -e 's/[[:space:]]/\ /g' filename.xyz` <br />
 This replaces all tab space with space 
