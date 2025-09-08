@@ -3,7 +3,8 @@ A script that convert Gaussian 16 log file to molden format xyz file<br />
 To use, just `source log-xyz.sh logname.log`<br />
 The description of how it works is also in the comments in the script <br /><br />
 ## Reserved Word/Phrase
-`GINC, Version, \` case sensitive and including Version with spaces in between eg. `Ver sion`
+`GINC, Version, \` case sensitive and including Version with spaces in between eg. `Ver sion` <br />
+These word cannot be in the title of the .inp file since it will appear on .log file
 <br /><br />
 ## How this chain of things work
 cat the log | sed to get only the line between 1\1\GINC and Version | tr to join all line together | turn every \ to a new line | 
