@@ -4,7 +4,7 @@ To use, just type `lxyz logname.log` or `logxyz logname.log` after it had been i
 The description of how it works is also in the comments in the script <br /><br />
 ## Installation Script
 This writes to .bashrc so do check it.<br />
-To install `source install.sh` Then type `y`. <br /><br />
+To install `source install.sh` Then type `y` <br /><br />
 ## Reserved Word/Phrase
 `GINC, Version, \` case sensitive and including Version with spaces in between eg. `Ver sion` <br />
 These word cannot be in the title of the .inp file since it will appear on .log file
