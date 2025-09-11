@@ -6,7 +6,7 @@ The description of how it works is also in the comments in the script <br /><br 
 This writes to .bashrc so do check it.<br />
 To install `source install.sh` Then type `y`
 ### Manual Installation
-1. To install manually, type `make log-xyz.sh` OR `cp log-xyz.sh log-xyz` then `chmod +x log-xyz`<br />
+1. To install manually, type `cp log-xyz.sh log-xyz` then `chmod +x log-xyz`<br />
 2. `cd /home` open .bashrc `vi .bashrc` then under "# User specific aliases and functions", type in `alias lxyz='/path/to/log-xyz'` make sure to select the chmodded file. This alias can be customized such as `alias logxyz='/path/to/log-xyz'`
 <br /><br />
 ## Reserved Word/Phrase
