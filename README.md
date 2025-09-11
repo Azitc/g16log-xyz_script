@@ -6,8 +6,19 @@ The description of how it works is also in the comments in the script <br /><br 
 This writes to .bashrc so do check it.<br />
 To install `source install.sh` Then type `y`
 ### Manual Installation
-1. To install manually, type `cp log-xyz.sh log-xyz` then `chmod +x log-xyz`<br />
-2. `cd /home` open .bashrc `vi .bashrc` then under "# User specific aliases and functions", type in `alias lxyz='/path/to/log-xyz'` make sure to select the chmodded file. This alias can be customized such as `alias logxyz='/path/to/log-xyz'`
+1. To install manually, type
+   ```
+   cp log-xyz.sh log-xyz
+   ```
+   then
+   ```
+   chmod +x log-xyz
+   ```
+2. `cd /home` open .bashrc `vi .bashrc` then under "# User specific aliases and functions", type in
+   ```
+   alias lxyz='/path/to/log-xyz'
+   ```
+   make sure to select the chmodded file. This alias can be customized such as `alias logxyz='/path/to/log-xyz'`
 <br /><br />
 ## Reserved Word/Phrase
 `GINC, Version, \` case sensitive and including Version with spaces in between eg. `Ver sion` <br />
@@ -15,8 +26,14 @@ These word cannot be in the title of the .inp file since it will appear on .log 
 <br /><br />
 ## Reformatting Tab Space
 If the tab spaces are unsightly change it to space (The file is still completely usable just ugly) <br />
-In vim :`:%s/\s\+/ /g` <br />
-using sed: `sed -e 's/[[:space:]]/\ /g' filename.xyz` <br />
+In vim :
+```
+:%s/\s\+/ /g
+```
+using sed: 
+```
+sed -e 's/[[:space:]]/\ /g' filename.xyz
+```
 This replaces all tab space with space <br /><br />
 ## How this chain of things work
 cat the log | sed to get only the line between 1\1\GINC and Version | tr to join all line together | turn every \ to a new line | 
