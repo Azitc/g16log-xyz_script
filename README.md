@@ -3,7 +3,7 @@ A script that convert Gaussian 16 log file to molden format xyz file<br />
 To use, just type `lxyz logname.log` or `logxyz logname.log` after it had been installed or manually source the script `source log-xyz.sh logname.log`<br />
 The description of how it works is also in the comments in the script <br /><br />
 ## Installation Script
-This writes to .bashrc so do check it.<br />
+This writes to .bashrc so do check it.(Only works on Redhat)<br />
 To install `source install.sh` Then type `y`
 ### Manual Installation
 1. To install manually, type
